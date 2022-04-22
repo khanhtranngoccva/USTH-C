@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "matrix.h"
-
+#include "string.h"
 
 int main1() {
     int array1[][4] = {
@@ -17,3 +17,10 @@ int main1() {
     printArray(matTranspose, rowLength, colLength);
 }
 
+int main() {
+    char string1[] = "oofxxx oof";
+    char *string2 = filterOut(string1, 'x');
+    printf("%s\n", string2);
+    printf("%d\n", sizeof(string2));
+    printAllIndexOfChar("hanoghooi3nejtoan3irh209aiohfoihanogeww", 'a');
+}

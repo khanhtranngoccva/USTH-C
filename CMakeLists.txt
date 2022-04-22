@@ -3,4 +3,4 @@ project(USTHC C)
 
 set(CMAKE_C_STANDARD 17)
 
-add_executable(USTHC main.c header.h divisible.c arrays.c functions.c matrix.c matrix.h)
+add_executable(USTHC main.c header.h divisible.c arrays.c functions.c matrix.c matrix.h string.c string.h)
