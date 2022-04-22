@@ -107,7 +107,8 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				1
+				1,
+				6
 			]
 		}
 	],
@@ -147,6 +148,11 @@
 			"compileGroupIndex" : 0,
 			"path" : "determinant.c",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "matrix.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

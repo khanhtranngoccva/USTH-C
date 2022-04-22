@@ -8,6 +8,7 @@ long double *mulMatrix(long double *matrix, long double scalar, int colLength, i
 long double *matrixTranspose(long double *matrix, int colLength, int rowLength);
 long double *inverseMatrix(long double *matrix, int size);
 long double *cofactorMatrix(long double *matrix, int size);
+long double sumOfMatrixElements(long double *matrix, int colLength, int rowLength);
 
 void printArray(long double *matrix, int colLength, int rowLength) {
     for (int i = 0; i < colLength; i++) {
@@ -92,14 +93,13 @@ long double matrixDeterminant(long double *matrix, int dimension) {
         return result;
     }
 }
-
-
-int main() {
-    int size = 2;
-    long double matrix[][2] = {
-            {1, 2},
-            {4, 5},
-    };
-    long double *matrix2 = inverseMatrix(matrix, size);
-    printArray(matrix2, size, size);
+long double sumOfMatrixElements(long double *matrix, int colLength, int rowLength) {
+    long double result = 0;
+    for (int i = 0; i < colLength; i++) {
+        for (int j = 0; j < rowLength; j++) {
+            result += matrix[i * rowLength + j];
+        }
+    }
+    return result;
 }
+
