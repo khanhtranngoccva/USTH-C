@@ -3,21 +3,17 @@
 #include "matrix.h"
 #include "string.h"
 
-int main1() {
-    int array1[][4] = {
-            {1, 2, 3, 4},
-            {4, 5, 6, 7},
-            {7, 8, 9, 10},
+int main() {
+    long double array1[][1] = {
+            {2}
     };
     int rowLength = sizeof array1[0] / sizeof array1[0][0];
     int colLength = sizeof array1 / sizeof array1[0];
-    long double matSum = sumOfMatrixElements(array1, colLength, rowLength);
-    printf("%Lf\n", matSum);
-    long double *matTranspose = matrixTranspose(array1, colLength, rowLength);
-    printArray(matTranspose, rowLength, colLength);
+    printf("%Lf\n", matrixDeterminant(array1, 1));
+    printArray(inverseMatrix(array1, 1), 1, 1);
 }
 
-int main() {
+int main1() {
     char string1[] = "oofxxx oof";
     char *string2 = filterOut(string1, 'x');
     printf("%s\n", string2);

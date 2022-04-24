@@ -67,7 +67,7 @@ long double *matrixTranspose(long double *matrix, int colLength, int rowLength) 
 }
 long double matrixDeterminant(long double *matrix, int dimension) {
     if (dimension == 0) {
-        return 0;
+        return 1;
     } else if (dimension == 1) {
         return matrix[0];
     } else if (dimension == 2) {
