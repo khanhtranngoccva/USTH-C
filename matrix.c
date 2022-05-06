@@ -18,6 +18,8 @@ void printArray(long double *matrix, int colLength, int rowLength) {
         printf("\n");
     }
 }
+
+
 long double *mulMatrix(long double *matrix, long double scalar, int colLength, int rowLength) {
     long double *newMatrix = malloc(colLength * rowLength * sizeof (long double));
     long double *newMatrixPointer = &newMatrix[0];

@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "USTHC::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-USTHC-Debug-2010b7ee0f63e0a319e0.json",
+					"jsonFile" : "target-USTHC-Debug-0e00b991919c8b0ccfd6.json",
 					"name" : "USTHC",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Projects/USTHC/cmake-build-debug",
-		"source" : "C:/Projects/USTHC"
+		"build" : "C:/Users/Admin/CLionProjects/untitled/cmake-build-debug",
+		"source" : "C:/Users/Admin/CLionProjects/untitled"
 	},
 	"version" : 
 	{
